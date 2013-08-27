@@ -1,0 +1,10 @@
+EXPORTS
+InitInfo
+PreProc
+Match
+GetText
+GetStr
+ModifyLine
+SaveText
+Release
+SetLine
