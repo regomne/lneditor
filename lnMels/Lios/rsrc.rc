@@ -1,0 +1,48 @@
+#define IDR_VERSION1 1
+#define IDD_DLG1 1000
+#define IDC_TEXTLONG 1001
+#define IDC_CHK1 1002
+#define IDC_OK 1
+#define IDS_MORELINE 1
+
+IDR_VERSION1 VERSIONINFO
+FILEVERSION 1,4,2,0
+PRODUCTVERSION 1,4,2,0
+FILEOS 0x00000004
+FILETYPE 0x00000002
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080404B0"
+    BEGIN
+      VALUE "FileVersion", "1.4.2.0\0"
+      VALUE "ProductVersion", "1.4.2.0\0"
+      VALUE "CompanyName", "AmaF\0"
+      VALUE "FileDescription", "LiosGame Script plugin for lnedit.\0"
+      VALUE "InternalName", "lios.mel\0"
+      VALUE "OriginalFilename", "lios.mel\0"
+      VALUE "ProductName", "LiosGame Script Editor\0"
+      VALUE "Format", ".gsc\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0804, 0x04B0
+  END
+END
+
+IDD_DLG1 DIALOGEX 10,10,156,60
+CAPTION "IDD_DLG"
+FONT 9,"宋体",400,0,0
+STYLE 0x10C80080
+BEGIN
+  CONTROL "文本过长！（3行，每行最多20个字）",IDC_TEXTLONG,"Static",0x50000000,9,6,141,12
+  CONTROL "不再提示",IDC_CHK1,"Button",0x50010003,9,21,129,12
+  CONTROL "确定",IDC_OK,"Button",0x50010001,36,39,69,15
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_MORELINE "文本过长！行号：%d"
+END
+

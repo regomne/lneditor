@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="lnedit2.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="regexp.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="Strings.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="deelx.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="lnedit.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{0778b641-8836-4929-84d2-6891c863c5a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header">
+      <UniqueIdentifier>{e7eb3481-6a8b-4478-8027-a984a8ea547a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{165f0e8d-f7de-466c-8a9f-7b52993eb0e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
