@@ -1,9 +1,0 @@
-EXPORTS
-GetText
-ModifyLine
-Release
-Match
-PreProc
-SaveText
-SetLine
-InitInfo
