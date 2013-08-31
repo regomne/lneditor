@@ -245,7 +245,7 @@ GetText proc uses esi ebx edi _lpFI,_lpRI
 		.elseif al==8
 			add esi,2
 			lodsb
-			.while al>=4fh && al<=60h
+			.while al>=44h && al<=60h
 				invoke lstrlenA,esi
 				lea esi,[esi+eax+2]
 				invoke CircusGetLine,esi,[edi].nCharSet
@@ -372,11 +372,11 @@ ModifyLine proc uses ebx edi esi _lpFI,_nLine
 	
 	invoke _GetStringInList,edi,_nLine
 	mov ebx,eax
-	invoke CircusCheckLine,ebx
-	.if !eax
-		mov eax,E_LINEDENIED
-		jmp _Ex
-	.endif
+;	invoke CircusCheckLine,ebx
+;	.if !eax
+;		mov eax,E_LINEDENIED
+;		jmp _Ex
+;	.endif
 	invoke CircusSetLine,ebx,[edi].nCharSet
 	.if !eax
 		mov eax,E_LINEDENIED
@@ -431,10 +431,8 @@ ModifyLine proc uses ebx edi esi _lpFI,_nLine
 		lodsd
 		mov ecx,eax
 		shl eax,2
-		
-		;针对DC3RX，索引之后有个奇怪的节
+		;应对DC3RX
 		lea eax,[eax+ecx*2]
-		
 		add eax,esi
 		sub edx,eax
 		@@:
